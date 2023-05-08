@@ -5,7 +5,11 @@ function testFunc(){
 </script>
 
 <template>
-  <ecButton :isActive="false" @click="testFunc">
-    111
-  </ecButton>
+  <ecCard :isActive="true">
+    <template #side>
+      <ecButton>
+        1
+      </ecButton>
+    </template>
+  </ecCard>
 </template>

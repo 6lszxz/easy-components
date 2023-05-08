@@ -1,8 +1,9 @@
 import type { App } from 'vue'
 import ecButton from './button'
+import ecCard from './card'
 
 // 所有组件列表
-const components = [ ecButton ]
+const components = [ ecButton, ecCard ]
 
 // 定义 install 方法， App 作为参数
 const install = (app: App): void => {
@@ -13,6 +14,7 @@ const install = (app: App): void => {
 
 export {
     ecButton,
+    ecCard,
 }
 
 export default {
