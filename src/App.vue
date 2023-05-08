@@ -5,7 +5,7 @@ function testFunc(){
 </script>
 
 <template>
-  <ecCard :isActive="true">
+  <ecCard  size="small">
     <template #side>
       <ecButton>
         1
