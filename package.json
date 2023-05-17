@@ -1,18 +1,24 @@
 {
-  "name": "easy-components",
-  "version": "0.0.0",
+  "name": "@6lszxz/easy-components",
+  "version": "0.0.3",
   "private": false,
-  "main": "lib/index.min.js",
-  "module": "lib/index.esm.js",
-  "typings": "lib/index.d.ts",
+  "main": "dist/easy-components.umd.js",
+  "module": "dist/easy-components.mjs",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "build-lib": "vite build --target packages --outDir lib packages/index.ts"
   },
+  "files": [
+    "packages/*",
+    "dist/*",
+    "README.md",
+    "package.json"
+  ],
   "dependencies": {
     "vue": "^3.2.47"
   },

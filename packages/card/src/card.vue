@@ -52,7 +52,6 @@ const isSmall = computed(()=>{
     /* 总体的显示方式，分为主页和侧面*/
     display: flex;
     flex-direction: row;
-    
     box-shadow: 2px 2px 5px gray;
     border-radius: 5px;
     background-color: #f9f7f0;
@@ -62,20 +61,15 @@ const isSmall = computed(()=>{
     display: flex;
     flex-direction: column;
 }
-.side{
-    margin-top: 5vh;
-    margin-left: 30vw;
-}
 
+.ecCard:hover{
+    cursor: not-allowed;
+}
 .active:hover{
     cursor: pointer;
 }
-
-.ecCard :hover{
-    cursor: not-allowed;
-}
 .medium{
-    width: 40vw;
+    width: 45vw;
     height: 15vh;
 }
 .large{
@@ -84,7 +78,39 @@ const isSmall = computed(()=>{
 }
 
 .small{
-    width: 20vw;
+    width: 30vw;
     height: 10vh;
+}
+.medium>.side{
+    margin-top: auto;
+    padding: 0;
+    width: 15vw;
+    height: 15vh;
+}
+
+.large>.side{
+    margin-top: auto;
+    padding: 0%;
+    width: 20vw;
+    height: 30vh;
+}
+.small>.side{
+    margin-top: auto;
+    padding: 0%;
+    width: 10vw;
+    height: 10vh;
+}
+.medium>.main{
+    width:45vw;
+    height: 15vh;
+    padding: 0;
+}
+.small>.main{
+    width:10vw;
+    height: 10vh;
+}
+.large>.main{
+    width: 20vw;
+    height: 30vh;
 }
 </style>
