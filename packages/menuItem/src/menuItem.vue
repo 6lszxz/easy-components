@@ -41,7 +41,7 @@ props.index = computed(()=>{
 
     }
     to{
-        color: #FFD103;
+        background-color: #FFD103;
     }
 }
 

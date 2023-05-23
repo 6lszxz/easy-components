@@ -42,4 +42,8 @@ const isColumn = computed(()=>{
     flex-direction: column;
 }
 
+.activeNow{
+    
+}
+
 </style>
