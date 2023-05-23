@@ -38,11 +38,11 @@ const isSmall = computed(()=>{
                 <slot name="default">title</slot>
             </h2>
             <div>
-            <slot name="content">content</slot>
+            <slot name="content"></slot>
             </div>
         </div>
         <div class="side">
-            <slot name="side">side</slot>
+            <slot name="side"></slot>
         </div>
     </div>
 </template>
@@ -54,6 +54,10 @@ const isSmall = computed(()=>{
     flex-direction: row;
     box-shadow: 2px 2px 5px gray;
     border-radius: 5px;
+    background-color: #f9f7f0;
+}
+
+.ecCard *{
     background-color: #f9f7f0;
 }
 
