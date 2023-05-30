@@ -5,7 +5,12 @@ function testFunc(){
 </script>
 
 <template>
+<ecMenu>
   <ecMenuItem>
     111
   </ecMenuItem>
+<ecMenuItem>
+  222
+  </ecMenuItem>
+</ecMenu>
 </template>

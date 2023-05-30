@@ -4,6 +4,7 @@ import { computed } from 'vue';
 interface Props{
     mode?: string,
     defaultActive?: string,
+    active?: string,
 }
 
 const props = withDefaults(defineProps<Props>(),{

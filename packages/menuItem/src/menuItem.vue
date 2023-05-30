@@ -4,20 +4,28 @@ import { computed, useSlots } from 'vue';
 
 interface Props{
     index?: string,
+    active?: boolean,
 }
 
 const props =withDefaults(defineProps<Props>(),{
-    index: 'undefined'
+    index: 'undefined',
+    active: false,
 });
 
 props.index = computed(()=>{
 	return String(useSlots().default);
 }).value
 
+
+function itemClick():void{
+    props.active=true
+
+}
+
 </script>
 
 <template>
-<li class="ecMenuItem">
+<li class="ecMenuItem" @click="itemClick" :class="{active: props.active}">
         <slot>{{ props.index }}</slot>
 </li>
 </template>
@@ -43,6 +51,10 @@ props.index = computed(()=>{
     to{
         color: #FFD103;
     }
+}
+
+.active{
+    color: #FFD103;
 }
 
 </style>
