@@ -49,7 +49,7 @@ function itemClick():void{
 
     }
     to{
-        color: #FFD103;
+        background-color: #FFD103;
     }
 }
 
