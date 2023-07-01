@@ -47,18 +47,19 @@ const isSmall = computed(()=>{
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import '../../utils/index.scss';
 .ecCard{
     /* 总体的显示方式，分为主页和侧面*/
     display: flex;
     flex-direction: row;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px $info;
     border-radius: 5px;
-    background-color: #f9f7f0;
+    background-color: $default;
 }
 
 .ecCard *{
-    background-color: #f9f7f0;
+    background-color: $default;
 }
 
 .main{

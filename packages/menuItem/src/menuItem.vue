@@ -30,7 +30,8 @@ function itemClick():void{
 </li>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import "../../utils/index.scss";
 .ecMenuItem{
     list-style-type: none;
     width: 40px;
@@ -49,12 +50,12 @@ function itemClick():void{
 
     }
     to{
-        background-color: #FFD103;
+        background-color: $primary;
     }
 }
 
 .active{
-    color: #FFD103;
+    color: $primary;
 }
 
 </style>
